@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="cs"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Bez rutiny – rozcestník</title>
+<style>body{margin:0;background:#111;color:#fff;font:17px/1.6 -apple-system,"Segoe UI",system-ui,sans-serif;display:grid;place-items:center;min-height:100vh;padding:24px}main{max-width:560px}h1{margin:0 0 6px}a{display:block;margin:12px 0;padding:16px 20px;border:1px solid rgba(255,255,255,.14);border-radius:12px;color:#fff;text-decoration:none}a:hover{border-color:#ff7300}small{display:block;color:#a3a3a3}p{color:#a3a3a3}</style></head>
+<body><main><h1>Bez rutiny: vývojový rozcestník</h1><p>Tři weby tvoří prodejní funnel. Otevřete je přes adresy níže, aby fungovalo proklikávání mezi nimi.</p>
+<a href="hlavni/" data-d="bezrutiny.localhost">Hlavní web<small>bezrutiny.cz · tým, příběh, výsledky, reference</small></a>
+<a href="program/" data-d="program.bezrutiny.localhost">Program<small>program.bezrutiny.cz · bezplatný audit a rezervace termínu</small></a>
+<a href="vyzva/" data-d="vyzva.bezrutiny.localhost">3denní výzva<small>vyzva.bezrutiny.cz · registrace a Den 1</small></a>
+<p>Tento soubor slouží jen pro vývoj, na produkci se nenasazuje.</p></main><script>if(/^(localhost|127\.0\.0\.1)$/.test(location.hostname))document.querySelectorAll("a[data-d]").forEach(function(a){a.href="http://"+a.dataset.d+":"+location.port+"/";});</script></body></html>
